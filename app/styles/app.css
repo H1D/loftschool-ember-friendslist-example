@@ -1,0 +1,252 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp, strike, strong, sub, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+:focus {
+    outline: 0;
+}
+
+ins {
+    text-decoration: none;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+header, nav, section, article, aside, footer {
+    display: block;
+}
+
+html {
+    height: 100%;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background: #999;
+    font-family: 'FiraSans', sans-serif;
+    font-weight: 300;
+}
+
+.table {
+    display: table;
+    width: 100%;
+}
+
+.table-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#win-friends {
+    width: 620px;
+    height: 490px;
+    border-radius: 10px;
+    margin: 100px auto;
+}
+
+#win-friends-head {
+    background: #ff8663;
+    border-radius: 10px 10px 0 0;
+}
+
+#win-friends-head, #win-friends-head .table-cell {
+    height: 45px;
+    color: #fff;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+#win-friends-head .table-cell:first-child div {
+    margin-left: 15px;
+}
+
+#win-friends-head .table-cell:last-child {
+    width: 50px;
+}
+
+/*#win-friends-head .close {
+    width: 14px;
+    height: 14px;
+    background: url("images/close.png") no-repeat;
+    cursor: pointer;
+    float: right;
+    margin-right: 15px;
+}*/
+
+#win-friends-search {
+    background: #f0f0f0;
+}
+
+#win-friends-search, #win-friends-search .table-cell {
+    height: 45px;
+}
+
+#win-friends-search .table-cell {
+    width: 50%;
+}
+
+#win-friends-search .table-cell div {
+    background: #fff;
+    border-radius: 14px;
+}
+
+#win-friends-search .table-cell div input {
+    border: 0;
+    background: none;
+    width: 94%;
+    font-size: 12px;
+    line-height: 14px;
+    font-family: 'FiraSans', sans-serif;
+    font-weight: 300;
+}
+
+#win-friends-search .table-cell:first-child div,
+#win-friends-search .table-cell:last-child div {
+    background: #fff url("images/search.png") 7px 5px no-repeat;
+    padding-left: 27px;
+    margin: 0 10px 0 15px;
+}
+
+#win-friends-block {
+    height: 355px;
+    background: #fff;
+}
+
+#win-friends-block > .table-cell {
+    width: 50%;
+    padding: 0 15px;
+}
+
+#win-friends-block > .table-cell:first-child {
+    border-right: 1px solid #f0f0f0;
+}
+
+.win-friends-block-head {
+    font-size: 13px;
+    line-height: 14px;
+    font-weight: 400;
+    border-bottom: 1px solid #f0f0f0;
+    padding: 14px 0 5px;
+}
+
+.win-friends-block {
+    height: 323px;
+    overflow: auto;
+}
+
+.win-friends-block-el, .win-friends-block-el .table-cell {
+    height: 59px;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 500;
+}
+
+.win-friends-block-el .table-cell:first-child {
+    width: 58px;
+    text-align: center;
+}
+
+.win-friends-block-el .table-cell:last-child {
+    width: 22px;
+    text-align: center;
+}
+
+.add {
+    width: 16px;
+    height: 16px;
+    background: url("images/add.png") no-repeat;
+    cursor: pointer;
+}
+
+.win-friends-block-el {
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.win-friends-block-el:hover {
+    background: #f0f0f0;
+}
+
+.win-friends-block-el img {
+    border-radius: 50%;
+    margin-top: 5px;
+    width: 45px;
+    height: 45px;
+
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.remove {
+    width: 14px;
+    height: 14px;
+    background: url("images/remove.png") no-repeat;
+    cursor: pointer;
+}
+
+.win-friends-save {
+    background: #f0f0f0;
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+    height: 45px;
+}
+
+.win-friends-save-button {
+    width: 87px;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+    background: #ff8663;
+    font-size: 12px;
+    border-radius: 10px;
+    float: right;
+    margin: 8px 7px 0 0;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none !important;
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,61 @@
+<div id="win-friends-head" class="table">
+  <div class="table-cell">
+    <div>Выберите друзей</div>
+  </div>
+  <div class="table-cell">
+    <div class="close"></div>
+  </div>
+</div>
+<div id="win-friends-search" class="table">
+  <div class="table-cell">
+    <div>
+      {{input value=filterAll}}
+    </div>
+  </div>
+  <div class="table-cell">
+    <div>
+      {{input value=filterSeleted}}
+    </div>
+  </div>
+</div>
+<div id="win-friends-block" class="table">
+  <div class="table-cell">
+    <div class="win-friends-block-head">Ваши друзья</div>
+    {{#friends-list
+        include=allFriends
+        exclude=selectedFriends
+        filterStr=filterAll
+        drop=(action removeSelected draggedFriend)
+        class="win-friends-block drop-zone"
+        id="myFriendsList" as |friend|}}
+          {{friend-widget
+              actionClicked=(action addSelected)
+              friendDragStart=(action memoFriend)
+              friend=friend
+              class="win-friends-block-el table"
+              data-uid=friend.uid
+              draggable="true"}}
+    {{/friends-list}}
+
+  </div>
+  <div class="table-cell">
+    <div class="win-friends-block-head">Друзья в списке</div>
+    {{#friends-list
+        include=selectedFriends
+        filterStr=filterSeleted
+        drop=(action addSelected draggedFriend)
+        class="win-friends-block drop-zone" as |friend|}}
+          {{friend-widget
+              actionClicked=(action removeSelected)
+              friendDragStart=(action memoFriend)
+              friend=friend
+              class="win-friends-block-el table"
+              data-uid=friend.uid
+              draggable="true"}}
+    {{/friends-list}}
+  </div>
+</div>
+<div id="save" class="win-friends-save">
+  <div class="win-friends-save-button" {{action saveSelected}}>Сохранить</div>
+</div>
+

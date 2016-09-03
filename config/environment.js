@@ -4,6 +4,8 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'vk-friends',
     environment: environment,
+    vk_app_id: null,
+    vk_app_permissions: null,
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
